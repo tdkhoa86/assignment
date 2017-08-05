@@ -1,0 +1,9 @@
+
+- name: install git package
+  apt:
+    name: git
+
+- name: Get updated files from git repository include source code 
+  git: 
+    repo: https://github.com/tdkhoa86/assignment.git
+    dest: /opt/absolute
